@@ -1,0 +1,31 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet">
+    <title>canvasFrame</title>
+</head>
+<body>
+    <div class="grid">
+        <header>
+             <a href="#gameZone" id="newGame">New game</a>
+        </header>
+		
+        <div id="gameZone">
+            <canvas id="backgroundCanvas" width="1" height="1">
+            Your browser doesn't support HTML5
+            </canvas>
+            <svg id="svgRoot">
+                <circle cx="100" cy="100" r="10" id="ball" />
+                <rect id="pad" height="15px" width="150px" x="200" y="200" rx="10" ry="20"/>
+            </svg>
+            <div id="stats">
+            </div>
+            <div id="message">Victory!</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="mouse.js"></script>
+    <script type="text/javascript" src="background.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+</body>
+</html>
